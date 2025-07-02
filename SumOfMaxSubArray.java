@@ -7,19 +7,14 @@ public class SumOfMaxSubArray {
             int start = i;
             for(int j = i; j<numbers.length; j++){
                 currSum = 0;
-
-
                 int end = j;
                 for(int k = start; k<= end ; k++){
-                    currSum += numbers[k];
-
-                    
+                    currSum += numbers[k];  
                 }
                 System.out.println(currSum);
                 if(MaxSum < currSum){
                     MaxSum = currSum;
                 }
-
             }
             System.out.println();
         }
